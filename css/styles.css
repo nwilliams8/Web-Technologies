@@ -42,8 +42,7 @@ footer{
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 0;
-    background-image: url("../assets/img/christmas-dark.png");
-    background-repeat: no-repeat;
+    background-image: url("../assets/spiration dark.png");
     background-color: #111; /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
@@ -84,4 +83,14 @@ footer{
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
+}
+.hvr-underline-from-left::before{
+  background-color: #ccc;
+}
+.transform {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
 }
