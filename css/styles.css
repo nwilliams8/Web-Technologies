@@ -94,3 +94,9 @@ footer{
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
 }
+button{
+  position: fixed;
+  z-index: +1;
+  top: 0;
+  left: 0;
+}
