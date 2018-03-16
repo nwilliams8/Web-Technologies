@@ -10,7 +10,6 @@ function setup() { // sets up canvas, sliders and for loop for the array
      }
    }
    function draw() {
-     setFrameRate(fSlider.value());
      for (let i=0; i<circleArray.length; i++){
        circleArray[i].moveFunction();
        circleArray[i].displayCircle();
@@ -37,8 +36,8 @@ function setup() { // sets up canvas, sliders and for loop for the array
             this.angle += this.speedX/2
             this.angle += this.speedY/2
             push();
-            this.angle += this.speedX * dSlider.value();
-            this.angle += this.speedY * dSlider.value();
+            this.angle += this.speedX;
+            this.angle += this.speedY;
             pop();
             if (this.x > width || this.x<0){
               this.speedX *= -1;
@@ -50,7 +49,9 @@ function setup() { // sets up canvas, sliders and for loop for the array
 
              //Function defined within class that displays each ellipse and fills each shape
         displayCircle(){ // defines function
-          this.fillcol = color(this.r, this.g, this.b, aSlider.value()) // takes RGB values from earlier in the class and takes an alpha value from the slider
+          this.fillcol = color(this.r, this.g, this.b); // takes RGB values from earlier in the class and takes an alpha value from the slider
           fill(this.fillcol) // fills shape
           noStroke() // removes shape borders
-          ellipse(this.x, this.y, this.size, this.size); // draws shape }}
+          ellipse(this.x, this.y, this.size, this.size); // draws shape
+        }
+      }

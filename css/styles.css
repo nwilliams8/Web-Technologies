@@ -110,12 +110,7 @@ button{
   top: 0;
   left: 0;
 }
-#myContainer{
-  position: fixed;
-  z-index: -1;
-  top: 0;
-  left: 0;
-}
+
 #backgroundAnimation{
   position: fixed;
   z-index: -1;
