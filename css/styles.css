@@ -2,10 +2,20 @@ body{
   font-family: 'Raleway', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1, h2, h3, h4, h5{
   font-family: 'Anton', sans-serif;
 }
-
+h6{
+  font-family: 'Monda', sans-serif;
+  background-color: #ccc;
+  font-size: 24px;
+  padding: 0;
+  text-align: center;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  margin: 0;
+}
 .carousel-caption{
   background-color: rgba(0,0,0,0.2);
 }
@@ -39,7 +49,7 @@ footer{
     height: 100%; /* 100% Full-height */
     width: 0; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
+    z-index: 2; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 0;
     background-image: url("../assets/spiration dark.png");
@@ -96,7 +106,19 @@ footer{
 }
 button{
   position: fixed;
-  z-index: +1;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+#myContainer{
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+#backgroundAnimation{
+  position: fixed;
+  z-index: -1;
   top: 0;
   left: 0;
 }
