@@ -132,3 +132,6 @@ footer{
   top: 0;
   left: 0;
 }
+a:hover{
+  color: #3b4148;
+}
