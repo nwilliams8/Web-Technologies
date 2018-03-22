@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Neil Williams</title>
     <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link href="https://fonts.googleapis.com/css?family=BioRhyme|Bungee+Shade|Creepster|Ewert|Fruktur|Monoton|Kavoon" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Anton|Raleway" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <link href="../css/hover.min.css" rel="stylesheet">
     <link href="../css/styles.css" rel="stylesheet">
   </head>
-<body>
+<body class="animated fadeIn">
     <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
         <i class="fas fa-angle-double-left"></i>
@@ -31,9 +32,67 @@
   <div id='main'>
     <div id="myContainer">
       <div class="caption">
-        <h1>Circular Motion</h1>
+        <h1>Projects</h1>
       </div>
     </div>
+    <div id="left" class="container">
+    <div class="card card-body w-100 hvr-shadow">
+      <div class="row">
+        <div class="col-sm-6 col-lg-9">
+          <h2>Circular Motion</h2>
+          <p>This project is a generative art piece scripted in JavaScript using the p5js which allowed me to have a bigger variety of shapes and functions to use when developing the project. I wanted this project to explore the sin and cos functions and give the user the oppertunity to watch as these functions developed their own unique pattern across the page with a small level of interaction where the user could change the color, speed and angle of the shapes.</p>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <img class="card-img-top" src="../assets/CircularCaption.PNG">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="right" class="container">
+    <div class="card card-body w-100 hvr-shadow mt-5">
+  <div class="row">
+    <div class="col-sm-6 col-lg-3">
+      <img class="card-img-top" src="../assets/DataCapture.PNG">
+    </div>
+      <div class="col-sm-6 col-lg-9">
+        <h2>Data Visualisation</h2>
+        <p>This project is a data Visualisation on all the stage 1 marvel films using an online movie database. The intent of undertaking this project was to develop my skill in converting data from figures into something more visual and if I had more time I wouldve added more content and better visuals.</p>
+      </div>
+  </div>
+</div>
+</div>
+<div id="left" class="container">
+<div class="card card-body w-100 hvr-shadow mt-5">
+  <div class="row">
+    <div class="col-sm-6 col-lg-9">
+      <h2>Video Piracy</h2>
+      <p>This project was made to demonstrate the impact of piracy on the movie industry and how it is a product of modern technology. I wanted to demonstrate this using an old video cassette as i feel that it holds a strong nostalgia for many people, it also emphasises the speed that technology is moving at.</p>
+    </div>
+    <div class="col-sm-6 col-lg-3">
+      <img class="card-img-top" src="../assets/PiracyCapture.PNG">
+    </div>
+  </div>
+  <a class="text-white btn btn-secondary w-100 mt-2" data-toggle="modal" data-target="#PopUp">
+    Watch
+  </a>
+</div>
+</div>
+<div id="right" class="container">
+  <div class="card card-body w-100 hvr-shadow mt-5">
+<div class="row">
+  <div class="col-sm-6 col-lg-3">
+    <img class="card-img-top" src="../assets/SoundCapture.PNG">
+  </div>
+    <div class="col-sm-6 col-lg-9">
+      <h2>Digital Signals</h2>
+      <p>This project was made using a copper coil attatched to a microphone, the intent was to capture the signals going on all around us since technology is a part of our everyday lives. The signals captured in this piece are from different components of a computer.</p>
+    </div>
+</div>
+<a class="text-white btn btn-secondary w-100 mt-2" data-toggle="modal" data-target="#PopUp2">
+  Listen
+</a>
+</div>
+</div>
     <footer class="text-center mt-5 pt-5 pb-5">
       <div class="container">
         <div class="row">
@@ -76,41 +135,33 @@
 
 
 <!-- Modal -->
-<div class="modal fade" id="babbagePopUp" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="PopUp2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+        <h5 class="modal-title text-white" id="exampleModalLabel">Digital Signals</h5>
       </div>
       <div class="modal-body">
-        ...
+        <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/356644352&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
       </div>
     </div>
   </div>
 </div>
 </div>
-<div class="modal fade" id="maryNewmanPopUp" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="PopUp" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title MN</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+        <h5 class="modal-title text-white" id="exampleModalLabel">Video Piracy</h5>
       </div>
       <div class="modal-body">
-        ...
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/A9nfehUUHAk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
       </div>
     </div>
   </div>

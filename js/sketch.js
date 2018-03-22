@@ -1,6 +1,6 @@
 //Create two variables that will store the new objects from the class Circlelet
 circleArray = []; // defines array
-let arraySize = 400; // defines number of objects in array
+let arraySize = 300; // defines number of objects in array
 function setup() { // sets up canvas, sliders and for loop for the array
    var canvas = createCanvas(innerWidth, innerHeight); // creates canvas 500px by 500px
    canvas.parent('myContainer');
